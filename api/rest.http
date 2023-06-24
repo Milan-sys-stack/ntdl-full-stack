@@ -1,0 +1,29 @@
+### test call
+DELETE    http://localhost:8000
+
+# Task routers below
+
+### read tasks api
+GET  http://localhost:8000/api/v1/task
+
+### read tasks api
+POST   http://localhost:8000/api/v1/task
+Content-Type: application/json
+
+{
+    "task": "sleeping",
+    "hr": 133,
+    "type": "entry"
+}
+
+### read tasks api
+PATCH   http://localhost:8000/api/v1/task
+Content-Type: application/json
+
+{
+       "_id": "648506f81f4653220d31b124",
+      "type": "bad"
+}
+
+### delete tasks api
+DELETE  http://localhost:8000/api/v1/task/648506f81f4653220d31b124
